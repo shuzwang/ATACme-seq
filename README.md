@@ -10,4 +10,10 @@ ATACme-seq is a high-throughput sequencing technique which could simultaneously 
 * [Methylation calling on the aligned reads](#methylcalling)
 
 ## <a name="intro"></a>Introduction
-We have 12 experiment setups divided by the doses of Tn5 (1/5x, 1x, 5x), sonication (sonicated, not sonicated), and bisulfite conversion (converted, not converted) for GM12878 cell line. We concentrated on the converted conditions, which are ```1/5x_sonicated_converted```, ```1/5x_not_sonicated_converted```, ```1x_sonicated_converted```, ```1x_not_sonicated_converted```,```5x_sonicated_converted```, ```5x_not_sonicated_converted```. 
+We have 12 experiment setups divided by the doses of Tn5 (1/5x, 1x, 5x), sonication (sonicated, not sonicated), and bisulfite conversion (converted, not converted) for GM12878 cell line. We concentrated on the converted conditions, which are ```1/5x_sonicated_converted```, ```1/5x_not_sonicated_converted```, ```1x_sonicated_converted```, ```1x_not_sonicated_converted```,```5x_sonicated_converted```, ```5x_not_sonicated_converted```. For each condition, we only have one duplicate. 
+Started from fastq files. The files look at this:
+```@D00442:207:C97BPANXX:7:1109:1610:2067 1:N:0:ATTACTCG+TTTATGCCTT
+NTCTATCACCCTATAGAAGAACTAATGTTAGTATAAGTAACATGAAAACATTCTCCTCCGCATAACCTTCCCAGATCGGAAGAGCACACGTCTGAACTCCAGTCACATTACT
++
+#=<@BGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGDGGG
+...```
