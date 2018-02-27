@@ -21,3 +21,12 @@ NTCTATCACCCTATAGAAGAACTAATGTTAGTATAAGTAACATGAAAACATTCTCCTCCGCATAACCTTCCCAGATCGGA
 ```
 
 ## <a name="fastqc"></a>Basic quality checking with FastQC
+
+
+## <a name="trimming"></a>Trimming adapter sequence from reads
+
+## <a name="aligning"></a>Aligning the trimmed reads to a reference genome
+
+## <a name="callingpeaks"></a>Calling peaks on the aligned reads
+
+## <a name="methylcalling"></a>Methylation calling on the aligned reads
