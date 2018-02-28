@@ -58,6 +58,11 @@ java -jar /nfs/kitzman2/lab_software/linux_x86-64/picard-tools-1.141/picard.jarÂ
 ## <a name="callingpeaks"></a>Calling peaks on the aligned reads
 
 ## <a name="methylcalling"></a>Methylation calling on the aligned reads
+Using MethylDackel to call CpG sites.
+
+```
+MethylDackel extract -q 30 -p 30 -d 10 -@ 8 -o GM12878__5x__SONICATED__CONVERTED ~/reference_index/hs37d5.fa /nfs/kitzman3/users/shuzwang/final/md_atacme/GM12878__5x__SONICATED__CONVERTED_md.bam
+```
 
 # ATACme-seq Functional Analysis
 * [Enrichment analysis](#enrichanalysis)
