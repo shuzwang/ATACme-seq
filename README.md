@@ -49,6 +49,12 @@ fastqc -o ${LAB_DIR}/fastqc -f fastq ${LAB_DATA}/*.fastq.gz
 
 ## <a name="aligning"></a>Aligning the trimmed reads to a reference genome
 
+Merge the trimmed reads and untrimmed reads for each experiment condition and then mark and remove duplicates. 
+```
+samtools merge GM12878__5x__SONICATED__CONVERTED.bam /nfs/kitzman2/jacob/proj/matac/round3core_160607/data/bybc/bwameth_hs37d5/s/GM12878__5x__SONICATED__CONVERTED_TRIMMED.bam /nfs/kitzman2/jacob/proj/matac/round3core_160607/data/bybc/bwameth_hs37d5/s/GM12878__5x__SONICATED__CONVERTED_UNTRIMMED.bam
+
+java -jar /nfs/kitzman2/lab_software/linux_x86-64/picard-tools-1.141/picard.jar  MarkDuplicates METRICS_FILE=GM12878__5x__SONICATED__CONVERTED_dup.txt INPUT=/nfs/kitzman3/users/shuzwang/atacme/merged_atacme/GM12878__5x__SONICATED__CONVERTED.bam OUTPUT=/nfs/kitzman3/users/shuzwang/final/final_atacme/GM12878__5x__SONICATED__CONVERTED_md.bam ASSUME_SORTED=true CREATE_INDEX=true
+```
 ## <a name="callingpeaks"></a>Calling peaks on the aligned reads
 
 ## <a name="methylcalling"></a>Methylation calling on the aligned reads
