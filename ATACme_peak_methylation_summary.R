@@ -1,4 +1,5 @@
-atacme_methylation_summary_per_peak = function(peakfile,methylation_calling,output_order = "ATACme_meanPercentMethylation"){
+# The function is to summarize the methylation levels and coverage for each ATACme peak. The input files are the peak file and methylation calling file. Also, you can select the order of the output file.
+atacme_methylation_summary_per_peak = function(peakfile,methylation_calling,output_order = c("ATACme_meanPercentMethylation","ATACme_numOfCpGs","ATACme_meanCoverage")){
   library(GenomicRanges)
   library(tidyr)
   library(dplyr)
