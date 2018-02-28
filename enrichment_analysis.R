@@ -1,11 +1,12 @@
 ### Function to visualize the enrichment results:
 experiment_list = list.files("~/Desktop/enrichment_results/",pattern = ".bed")
-experiment_name_list = gsub(".bed","",experiment_list)
 setwd("~/Desktop/enrichment_results/")
 #enrich_analysis_plot_list = list()
 
 enrich_analysis_prep = function(experiment_list){
   library(ggplot2)
+
+  experiment_name_list = gsub(".bed","",experiment_list)
   enrich_analysis_list = list()
   if(length(experiment_list) == 1){
     enrich_analysis_list = read.delim(experiment_list,sep = "\t",header = T,stringsAsFactors = F)
